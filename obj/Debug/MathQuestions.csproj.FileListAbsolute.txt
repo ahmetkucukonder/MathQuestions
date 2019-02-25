@@ -1,0 +1,31 @@
+c:\users\kckndr\documents\visual studio 2010\Projects\Helloworld\Helloworld\obj\Debug\MathQuestions.csprojResolveAssemblyReference.cache
+c:\users\kckndr\documents\visual studio 2010\Projects\Helloworld\Helloworld\bin\Debug\Assembly-CSharp-firstpass.dll
+c:\users\kckndr\documents\visual studio 2010\Projects\Helloworld\Helloworld\bin\Debug\Assembly-CSharp.dll
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\bin\Debug\MathQuestions.dll
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\bin\Debug\MathQuestions.pdb
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\obj\Debug\MathQuestions.dll
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\obj\Debug\MathQuestions.pdb
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\MathQuestions.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\MathQuestions.pdb
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\obj\Debug\MathQuestions.csprojAssemblyReference.cache
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\obj\Debug\MathQuestions.csproj.CoreCompileInputs.cache
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\obj\Debug\MathQuestions.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\obj\Debug\MathQuestions.pdb
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\MathQuestions.dll.config
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\Assembly-CSharp.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\Rocket.Core.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\System.ValueTuple.dll
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\bin\Debug\System.ValueTuple.xml
+C:\Users\CapScroLL\source\repos\MathQuestions\MathQuestions\obj\Debug\MathQuestions.csproj.CopyComplete

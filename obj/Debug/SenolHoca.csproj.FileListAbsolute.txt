@@ -1,0 +1,7 @@
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\obj\Debug\SenolHoca.csprojResolveAssemblyReference.cache
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\bin\Debug\Assembly-CSharp.dll
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\bin\Debug\SenolHoca.dll
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\bin\Debug\SenolHoca.pdb
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\obj\Debug\SenolHoca.dll
+C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\obj\Debug\SenolHoca.pdb

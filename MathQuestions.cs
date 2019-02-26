@@ -37,6 +37,7 @@ namespace CapScroLL.MathQuestions
             }
         }
         //----------------------------------Starter-----------------------------//
+
         //Load
         protected override void Load()
         {
@@ -76,7 +77,7 @@ namespace CapScroLL.MathQuestions
             Automation = this;
             if (Configuration.Instance.MathQuestionsEnabled)
                 try
-            {
+                {
                     if (State == PluginState.Loaded && Configuration.Instance.Interval != 0 && (timer == null || ((DateTime.Now - timer.Value).TotalMinutes > Configuration.Instance.Interval)))
                     {
                         number1 = autonumber.Next(8, 85);
@@ -106,7 +107,7 @@ namespace CapScroLL.MathQuestions
                         timer = DateTime.Now;
                         NoQuestion = false;
                     }
-                }
+            }
             catch (Exception old)
             {
                 Rocket.Core.Logging.Logger.LogException(old);
@@ -117,16 +118,17 @@ namespace CapScroLL.MathQuestions
         //ReplyCommand
         [RocketCommand("reply", "Know the questions and make money!", "<answer>", AllowedCaller.Player)]
         [RocketCommandAlias("re")]
-        public void ExecuteCommandreply(IRocketPlayer caller, string[] answer)
+        public void ExecuteCommandcevap(IRocketPlayer caller, string[] answer)
         {
+            if (NoQuestion == true)
+            {
+                string noquestion = Translate("mathquestions_no_question");
+                UnturnedChat.Say(caller, noquestion, UnturnedChat.GetColorFromName(Configuration.Instance.UnfavorableMessageColor, UnityEngine.Color.red));
+            }
+
                 UnturnedPlayer player = (UnturnedPlayer)caller;
                 if (answer.Length > 0)
                 {
-                    if (NoQuestion == true)
-                    {
-                        string noquestion = Translate("mathquestions_no_question");
-                        UnturnedChat.Say(caller, noquestion, UnturnedChat.GetColorFromName(Configuration.Instance.UnfavorableMessageColor, UnityEngine.Color.red));
-                    }
                     if (answer[0] == result.ToString() && NoQuestion == false)
                     {
                         NoQuestion = true;
@@ -144,8 +146,8 @@ namespace CapScroLL.MathQuestions
                         });
                     }
                     if (answer[0] != result.ToString() && NoQuestion == false) UnturnedChat.Say(caller, Translate("mathquestions_wrong_answer"), UnturnedChat.GetColorFromName(Configuration.Instance.UnfavorableMessageColor, UnityEngine.Color.red));
+                }
                 else UnturnedChat.Say(caller, Translate("mathquestions_invalid_parameter"), UnturnedChat.GetColorFromName(Configuration.Instance.MessageColor, UnityEngine.Color.yellow));
-            }
         }
     }
-}
+ }

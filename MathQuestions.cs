@@ -124,7 +124,7 @@ namespace CapScroLL.MathQuestions
                 {
                     if (NoQuestion == true)
                     {
-                        string noquestion = Translate("matquestions_no_question");
+                        string noquestion = Translate("mathquestions_no_question");
                         UnturnedChat.Say(caller, noquestion, UnturnedChat.GetColorFromName(Configuration.Instance.UnfavorableMessageColor, UnityEngine.Color.red));
                     }
                     if (answer[0] == result.ToString() && NoQuestion == false)

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Rocket.API;
 using Rocket.API.Collections;
 using Rocket.Core.Plugins;
@@ -74,10 +74,9 @@ namespace CapScroLL.MathQuestions
         private void Autoquestion()
         {
             Automation = this;
-            try
+            if (Configuration.Instance.MathQuestionsEnabled)
+                try
             {
-                if (Configuration.Instance.MathQuestionsEnabled)
-                {
                     if (State == PluginState.Loaded && Configuration.Instance.Interval != 0 && (timer == null || ((DateTime.Now - timer.Value).TotalMinutes > Configuration.Instance.Interval)))
                     {
                         number1 = autonumber.Next(8, 85);
@@ -108,12 +107,11 @@ namespace CapScroLL.MathQuestions
                         NoQuestion = false;
                     }
                 }
-                else { Automation = null; }
-            }
             catch (Exception old)
             {
                 Rocket.Core.Logging.Logger.LogException(old);
             }
+            else { Automation = null; }
         }
 
         //ReplyCommand
@@ -121,8 +119,6 @@ namespace CapScroLL.MathQuestions
         [RocketCommandAlias("re")]
         public void ExecuteCommandreply(IRocketPlayer caller, string[] answer)
         {
-            if (Configuration.Instance.MathQuestionsEnabled)
-            {
                 UnturnedPlayer player = (UnturnedPlayer)caller;
                 if (answer.Length > 0)
                 {
@@ -148,10 +144,8 @@ namespace CapScroLL.MathQuestions
                         });
                     }
                     if (answer[0] != result.ToString() && NoQuestion == false) UnturnedChat.Say(caller, Translate("mathquestions_wrong_answer"), UnturnedChat.GetColorFromName(Configuration.Instance.UnfavorableMessageColor, UnityEngine.Color.red));
-                }
                 else UnturnedChat.Say(caller, Translate("mathquestions_invalid_parameter"), UnturnedChat.GetColorFromName(Configuration.Instance.MessageColor, UnityEngine.Color.yellow));
             }
-            else { UnturnedChat.Say(caller, Translate("mathquestions_disabled"), UnturnedChat.GetColorFromName(Configuration.Instance.UnfavorableMessageColor, UnityEngine.Color.red)); }
         }
     }
 }

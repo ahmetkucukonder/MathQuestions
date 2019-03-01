@@ -83,10 +83,10 @@ namespace CapScroLL.MathQuestions
                         number1 = autonumber.Next(8, 85);
                         number2 = autonumber.Next(10, 97);
 
-                        if (Configuration.Instance.Addition == true && Configuration.Instance.Subtraction == false)
-                        { operation = "+"; result = number1 + number2; }
-                        if (Configuration.Instance.Addition == false && Configuration.Instance.Subtraction == true)
-                        { operation = "-"; result = number1 - number2; }
+                        if (Configuration.Instance.Toplama == true && Configuration.Instance.Cikarma == false)
+                        { autoperation = 1; }
+                        if (Configuration.Instance.Toplama == false && Configuration.Instance.Cikarma == true)
+                        { autoperation = 2; }
 
                         if (Configuration.Instance.Addition == Configuration.Instance.Subtraction)
                         {

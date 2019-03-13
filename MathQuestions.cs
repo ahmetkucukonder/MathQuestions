@@ -30,7 +30,7 @@ namespace CapScroLL.MathQuestions
                     {"mathquestions_broadcast_winner", "[MathQuestions]: {0} answered the question correctly and earned {2} {3}! Answer: {1}"},
                     {"mathquestions_true_answer", "[MathQuestions]: Congratulations! You have earned {0} {1} by answering correctly! Your new balance: {2} {1}"},
                     {"mathquestions_wrong_answer", "[MathQuestions]: Wrong answer!"},
-                    {"mathquestions_invalid_parameter", "[MathQuestions]: Usage: '/re <answer>' or '/reply <answer>'"},
+                    {"mathquestions_invalid_parameter", "[MathQuestions]: Usage: '/re <answer>' or '/answer <answer>'"},
                     {"mathquestions_no_question", "[MathQuestions]: No active questions yet!"},
                     {"mathquestions_disabled", "MathQuestions is disabled!"}
                 };
@@ -115,8 +115,8 @@ namespace CapScroLL.MathQuestions
             else { Automation = null; }
         }
 
-        //ReplyCommand
-        [RocketCommand("reply", "Know the questions and make money!", "<answer>", AllowedCaller.Player)]
+        //AnswerCommand
+        [RocketCommand("answer", "Know the questions and make money!", "<answer>", AllowedCaller.Player)]
         [RocketCommandAlias("re")]
         public void ExecuteCommandcevap(IRocketPlayer caller, string[] answer)
         {

@@ -1,6 +1,0 @@
-C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\bin\Release\MathQuestions.dll
-C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\bin\Release\MathQuestions.pdb
-C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\bin\Release\Assembly-CSharp-firstpass.dll
-C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\bin\Release\Assembly-CSharp.dll
-C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\obj\Release\MathQuestions.dll
-C:\Users\KCKNDR\Documents\Visual Studio 2010\Projects\Helloworld\Helloworld\obj\Release\MathQuestions.pdb

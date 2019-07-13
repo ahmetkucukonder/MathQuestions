@@ -120,16 +120,17 @@ namespace CapScroLL.MathQuestions
         [RocketCommandAlias("re")]
         public void ExecuteCommandcevap(IRocketPlayer caller, string[] answer)
         {
-            if (NoQuestion == true)
+        try {
+            UnturnedPlayer player = (UnturnedPlayer)caller;
+            if (NoQuestion)
             {
                 string noquestion = Translate("mathquestions_no_question");
                 UnturnedChat.Say(caller, noquestion, UnturnedChat.GetColorFromName(Configuration.Instance.UnfavorableMessageColor, UnityEngine.Color.red));
             }
-
-                UnturnedPlayer player = (UnturnedPlayer)caller;
-                if (answer.Length > 0)
+            else {
+                if (answer.Length >= 1)
                 {
-                    if (answer[0] == result.ToString() && NoQuestion == false)
+                    if (answer[0] == result.ToString() && !NoQuestion)
                     {
                         NoQuestion = true;
                         MathQuestions.ExecuteDependencyCode("Uconomy", (IRocketPlugin plugin) =>
@@ -145,9 +146,14 @@ namespace CapScroLL.MathQuestions
                             }
                         });
                     }
-                    if (answer[0] != result.ToString() && NoQuestion == false) UnturnedChat.Say(caller, Translate("mathquestions_wrong_answer"), UnturnedChat.GetColorFromName(Configuration.Instance.UnfavorableMessageColor, UnityEngine.Color.red));
+                    if (answer[0] != result.ToString() && !NoQuestion) UnturnedChat.Say(caller, Translate("mathquestions_wrong_answer"), UnturnedChat.GetColorFromName(Configuration.Instance.UnfavorableMessageColor, UnityEngine.Color.red));
                 }
                 else UnturnedChat.Say(caller, Translate("mathquestions_invalid_parameter"), UnturnedChat.GetColorFromName(Configuration.Instance.MessageColor, UnityEngine.Color.yellow));
-        }
+            }
+         }
+       } catch (Exception err)
+       {
+       Rocket.Core.Logging.Logger.LogWarning ("Error: " + err)
+       }
     }
  }

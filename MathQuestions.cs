@@ -17,7 +17,7 @@ namespace CapScroLL.MathQuestions
         public bool NoQuestion = true;
         void FixedUpdate()
         {
-            Autoquestion();
+            AutoQuestion();
         }
         //Translations
         public override TranslationList DefaultTranslations
@@ -44,18 +44,11 @@ namespace CapScroLL.MathQuestions
             Instance = this;
             if (Configuration.Instance.MathQuestionsEnabled)
             {
-                Rocket.Core.Logging.Logger.LogWarning("             +------------------Math-Questions-----------------+");
-                Rocket.Core.Logging.Logger.LogWarning("             |                  Coder: CapScroLL               |");
-                Rocket.Core.Logging.Logger.LogWarning("             |-------------------------------------------------|");
-                Rocket.Core.Logging.Logger.LogWarning("             |              youtube.com/CapScroLL              |");
-                Rocket.Core.Logging.Logger.LogWarning("             |         steamcommunity.com/id/CapScroLL         |");
-                Rocket.Core.Logging.Logger.LogWarning("             +------------------Math-Questions-----------------+");
+                Rocket.Core.Logging.Logger.LogWarning("MathQuestions - Enabled");
             }
             else
             {
-                Rocket.Core.Logging.Logger.LogError("             +------------------Math-Questions-----------------+");
-                Rocket.Core.Logging.Logger.LogError("             |                     DISABLED                    |");
-                Rocket.Core.Logging.Logger.LogError("             +------------------Math-Questions-----------------+");
+                Rocket.Core.Logging.Logger.LogError("MathQuestions - Disabled");
             }
         }
 
@@ -72,7 +65,7 @@ namespace CapScroLL.MathQuestions
         public static int number1, number2, autoperation, result;
         public static string operation;
 
-        private void Autoquestion()
+        private void AutoQuestion()
         {
             Automation = this;
             if (Configuration.Instance.MathQuestionsEnabled)
@@ -118,7 +111,7 @@ namespace CapScroLL.MathQuestions
         //AnswerCommand
         [RocketCommand("answer", "Know the questions and make money!", "<answer>", AllowedCaller.Player)]
         [RocketCommandAlias("re")]
-        public void ExecuteCommandcevap(IRocketPlayer caller, string[] answer)
+        public void ExecuteCommandCevap(IRocketPlayer caller, string[] answer)
         {
         try {
             UnturnedPlayer player = (UnturnedPlayer)caller;
